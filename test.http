@@ -1,0 +1,15 @@
+### Test 1: Send a mock C# error log to your API
+POST http://localhost:5245/api/logs
+Content-Type: application/json
+
+{
+    "ApplicationName": "PaymentService",
+    "LogLevel": "Critical",
+    "Message": "Object reference not set to an instance of an object.",
+    "StackTrace": "at PaymentService.Processor.Execute(Int32 userId) in Processor.cs:line 42"
+}
+
+###
+
+### Test 2: Fetch all logs back from SQLite to see the AI fix
+GET http://localhost:5245/api/logs
