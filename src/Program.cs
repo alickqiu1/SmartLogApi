@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add Database Context to the application container
 builder.Services.AddDbContext<LogContext>(options =>
-    options.UseSqlite("Data Source=smartlogs.db"));
+    options.UseSqlite("Data Source=../smartlogs.db"));
 
 builder.Services.AddHttpClient<AiLogService>();
 

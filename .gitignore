@@ -483,3 +483,11 @@ $RECYCLE.BIN/
 
 # Local SQLite database file
 smartlogs.db
+
+src/bin/
+src/obj/
+test/SmartLogApi.Tests/bin/
+test/SmartLogApi.Tests/obj/
+src/smartlogs.db
+smartlogs.db
+

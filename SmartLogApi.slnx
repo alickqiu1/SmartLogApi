@@ -1,3 +1,8 @@
 <Solution>
-  <Project Path="SmartLogApi.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/SmartLogApi.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/SmartLogApi.Tests/SmartLogApi.Tests.csproj" />
+  </Folder>
 </Solution>
