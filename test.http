@@ -1,5 +1,8 @@
+# 1. Define the base URL variable at the very top
+@baseUrl = http://localhost:5245
+
 ### Test 1: Send a mock C# error log to your API
-POST http://localhost:5245/api/logs
+POST {{baseUrl}}/api/logs
 Content-Type: application/json
 
 {
@@ -12,4 +15,4 @@ Content-Type: application/json
 ###
 
 ### Test 2: Fetch all logs back from SQLite to see the AI fix
-GET http://localhost:5245/api/logs
+GET {{baseUrl}}/api/logs
